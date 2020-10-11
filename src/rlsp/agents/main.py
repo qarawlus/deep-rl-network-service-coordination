@@ -351,10 +351,10 @@ def training(agent, env, callbacks, steps, result):
 
 
 if __name__ == '__main__':
-    agent_config = 'res/config/agent/ddpg/agent_f1d3reward_64a_64c_099gam_00001tau_001alp_0001dec.yaml'
-    network = 'res/networks/abilene/abilene-in3-rand-cap.graphml'
+    agent_config = 'res/config/agent/ddpg/agent_f1d0reward_64a_64c_099gam_00001tau_001alp_0001dec.yaml'
+    network = 'res/networks/abilene/abilene_1-5in-1eg/abilene-in5-rand-cap0-2.graphml'
     service = 'res/service_functions/abc.yaml'
-    sim_config = 'res/config/simulator/rand-mmp-arrival10-5_det-size001_dur100.yaml'
+    sim_config = 'res/config/simulator/rand-arrival10_det-size001_duration100.yaml'
     # gen_sim_config = 'res/config/simulator/det-mmp-arrival10-5_det-size001_dur100.yaml'
 
     # training
@@ -364,7 +364,7 @@ if __name__ == '__main__':
     # cli([agent_config, network, service, sim_config, '200', '-t', '2020-02-11_13-51-18_seed4216'])
 
     # training & testing
-    cli([agent_config, network, service, sim_config, '200', '--append-test'])
+    cli([agent_config, network, service, sim_config, '100000', '--append-test'])
 
     # training & testing for 4 episodes, with fixed simulator seed
     # cli([agent_config, network, service, sim_config, '200', '--append-test', '-e', '4', '-ss', '5555'])

@@ -49,7 +49,7 @@ class GymEnv(gym.Env):
         self.np_random = np.random.RandomState()
         self.seed(seed)
 
-        self.network, _ = read_network(self.network_file)
+        self.network, _, _ = read_network(self.network_file)
         self.network_diameter = network_diameter(self.network)
         self.sfc_list = get_sfc(service_file)
         self.sf_list = get_sf(service_file)
