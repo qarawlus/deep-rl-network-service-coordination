@@ -10,5 +10,7 @@ flow_size_shape: 0.001 # default: 0.001
 deterministic_size: True
 run_duration: 100 # default: 100
 
+ttl_choices: [50]
+
 # Optional: Write Scheduling results, uncomment to create schedule file
 # write_schedule: True

@@ -3,12 +3,13 @@
 venv37
 venv-tensorboard-win
 results
-
+results_*
 # LSTM weights
 res/lstm_weights
 
 # tensorboard graphs
 graph
+graph_*
 
 # coach experiments
 experiments/
